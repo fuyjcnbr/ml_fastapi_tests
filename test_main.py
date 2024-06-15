@@ -17,7 +17,7 @@ def test_predict_positive():
     )
     json_data = response.json()
     assert response.status_code == 200
-    assert json_data['label'] == 'POSITIVE'
+    assert json_data["label"] == "POSITIVE"
 
 
 def test_predict_negative():
@@ -27,4 +27,4 @@ def test_predict_negative():
     )
     json_data = response.json()
     assert response.status_code == 200
-    assert json_data['label'] == 'NEGATIVE'
+    assert json_data["label"] == "NEGATIVE"
